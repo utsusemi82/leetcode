@@ -1,6 +1,7 @@
 # Write your MySQL query statement below
-SELECT s.machine_id, ROUND(AVG(e.timestamp-s.timestamp), 3) AS processing_time
-FROM Activity s JOIN Activity e ON
-    s.machine_id = e.machine_id AND s.process_id = e.process_id AND
-    s.activity_type = 'start' AND e.activity_type = 'end'
-GROUP BY s.machine_id;
+select machine_id, round(avg(time_lapse), 3) as processing_time
+from
+(select machine_id, process_id,
+max(timestamp) over (partition by machine_id, process_id) - min(timestamp) over (partition by machine_id, process_id) 
+as time_lapse from Activity) temp
+group by machine_id
