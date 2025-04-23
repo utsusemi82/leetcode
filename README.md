@@ -1,3 +1,5 @@
-Welcome to my repository for practicing SQL questions from LeetCode. The purpose of this repository is to improve my SQL skills and prepare for technical interviews.
+Welcome to my repository for practising SQL questions from LeetCode. I created this repository to improve my SQL skills and prepare for technical interviews.
 
 Join me: https://leetcode.com/studyplan/top-sql-50/
+
+Revision SQL: [Note](https://github.com/utsusemi82/leetcode/tree/master/Note)
