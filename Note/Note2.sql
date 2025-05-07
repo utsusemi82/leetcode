@@ -210,7 +210,7 @@ FROM `employee`
 WHERE `emp_id` = (
 		SELECT `manager_id`
 		FROM `branch`
-		WHERE `branch_name` = `R&D'`
+		WHERE `branch_name` = `R&D`
 );
 
 -- 2. find emp that tele with client >75000 sales
@@ -231,4 +231,7 @@ WHERE `emp_id` = 207;
 SELECT * FROM `branch`; -- on delete set null
 SELECT * FROM `works_with`; -- on delete cascade (if its FK & PK, then use cascade, nvr use null)
 
+
+-- https://www.w3schools.com/sql/func_mysql_substr.asp
+	
 
