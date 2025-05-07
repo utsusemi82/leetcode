@@ -3,3 +3,4 @@ Welcome to my repository for practising SQL questions from LeetCode. I created t
 Join me: https://leetcode.com/studyplan/top-sql-50/
 
 Revision SQL: [Note](https://github.com/utsusemi82/leetcode/tree/master/Note)
+              [Substr](https://www.w3schools.com/sql/func_mysql_substr.asp)
